@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/250e99019f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+          $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+    <title>Sakith Chanlaka</title>
+</head>
+<body>
+   <nav id="nav">
+    <a href="index.html"><i class="fa-solid fa-house"></i> HOME </i></a>
+    <a href="#about"><i class="fa-solid fa-address-card"></i> ABOUT</a>
+    <a href="#projects"><i class="fa-solid fa-code"></i> PROJECTS</a>
+    <a href="#contact"> <i class="fa-solid fa-phone"></i> CONTACT</a>
+    <span><i class="fa-brands fa-github"></i></span>
+    <span><i class="fa-brands fa-youtube"></i></span>
+    <span><i class="fa-brands fa-linkedin"></i></span>
+    <span><i class="fa-brands fa-instagram"></i>    </span> 
+    <span><i class="fa-brands fa-facebook"></i>   </span> 
+   
+  </nav>
+<div id="intro">
+    <img src="images/back.jpg">
+    <p>Hey I'm <span>Sakith Chanlaka</span></p>
+    <p class="hashtag">#Software_Engineer #Web_Designer #YouTuber </p>
+</div>
+<div id="about">
+    <img src="images/pic.jpg">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quas laboriosam! Expedita totam porro consectetur adipisicing elit. Modi, ab temporibumaiores nam veniam, asperiores possimus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quas laboriosam! Expedita totam porro maiores nam veniam, asperiores possimus illumLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quas laboriosam! Expedita totam porro maiores nam veniam, asperiores possimus illum</p>
+  
+</div>
+
+<a href="index2.html"><button class="cv">See More About Me <i class="fa-solid fa-angles-right fa-beat"></i></button>
+</a>
+<div id="projects">
+    <h2>PROJECTS</h2>
+    <div class="project">
+    <img src="images/openlk.jpeg.png">
+    <p><span>OPENLK WEBSITE</span><br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ab temporibus similique vero inventore consectetur adipisicing elit. Modi, ab temporibuconsectetur adipisicing elit. Modi, ab temporibuerror.consectetur adipisicing elit. Modi, ab temporibu<br>
+    <button>Visit Website <i class="fa-solid fa-angles-right fa-beat"></i></button></p>
+    </div>
+    <div class="project">
+    <img src="images/commercewiki.png">
+    <p><span>COMMERCEWIKI WEBSITE</span><br>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt doloribus, accusantiumconsectetur adipisicing elit. Modi, ab temporibu consectetur adipisicing elit. Modi, ab temporibuconsectetur adipisicing elit. Modi, ab temporibucumque temporibus provident!<br>
+    <button>Visit Website <i class="fa-solid fa-angles-right fa-beat"></i></button></p>
+    </div>
+    <div class="project">
+    <img src="images/amigos.png">
+    <p><span>AMIGOS PHOTOGRAPHY WEBSITE</span><br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis architecto maiores sit consectetur consectetur adipisicing elit. Modi, ab temporibuadipisicing elit. Modi, ab temporibunihil ratione deleniti.<br>
+    <button>Visit Website <i class="fa-solid fa-angles-right fa-beat"></i></button></p>
+    </div>
+    <div class="project">
+    <img src="images/vp.png">
+    <p><span>VP BOOK SHOP WEBSITE</span><br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut assumenda doloremque fugit non consectetur consectetur adipisicing elit. Modi, ab temporibuadipisicing elit. Modi, ab temporibulaboriosam unde.<br>
+    <button>Visit Website <i class="fa-solid fa-angles-right fa-beat"></i></button></p>
+</div>
+<div class="project">
+
+  <p><span>SRICARE SERVICES WEBSITE</span><br>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut assumenda doloremque fugit non consectetur consectetur adipisicing elit. Modi, ab temporibuadipisicing elit. Modi, ab temporibulaboriosam unde.<br>
+  <a href="https://melanous-transits.000webhostapp.com/"target="_blank"><button>Visit Website <i class="fa-solid fa-angles-right fa-beat"></i></button></p>
+</div></div>
+</div>
+<div class="top">
+   <a href="#nav"> <i class="fa-solid fa-circle-chevron-up"></i></a></div>
+<div id="contact">
+    <h2>CONTACT ME</h2>
+    <form>
+        
+       <i class="fa-solid fa-user"></i>  NAME<input type="text"placeholder="Enter Your Name"><br>
+        <i class="fa-regular fa-at"></i> EMAIL<input type="email"placeholder="example@mail.com"><br>
+        <i class="fa-solid fa-message"></i> MESSAGE <textarea rows="4" cols="50" placeholder="Enter Your Message Here"></textarea><br><br>
+        <button>SUBMIT <i class="fa-regular fa-paper-plane fa-bounce"></i></button><br><br>
+    </form>
+</div>
+<div class="footer">
+    <p>&copy;2023 &lt Creative Web Solution By <span>Sakith Chanlaka</span> /&#62</p>
+</div>
+
+
+</body>
+</html>

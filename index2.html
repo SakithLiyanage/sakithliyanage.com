@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/250e99019f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>ABOUT ME</title>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+                  $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                window.location.hash = hash;
+              });
+            } 
+          });
+        });
+        </script>
+</head>
+<body>
+<div id="title">
+    <span><a href="index.html"><i class="fa-solid fa-circle-chevron-left"></i></a></span><h4><i class="fa-solid fa-address-card"></i> ABOUT ME</h4> 
+</div>
+<div class="prof">
+    <img src="images/pic2.jpg">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Neque quas iste fuga aperiam recusandae. Ab tenetur similique voluptas odio minus iste inventore deserunt, dignissimos illum suscipit non sed voluptatum labore error qui possimus eum dolorum ipsa praesentium id, tempore molestias. Illo, minus numquam sunt molestias explicabo perspiciatis placeat quaerat corporis nemo, ducimus consectetur, iusto sequi expedita animi non.
+    <br><br><span>Go To Linkdin </span><i class="fa-brands fa-linkedin"></i></p>
+</div>
+<div class="edu"><br>
+    <h3>EDUCATION <i class="fa-solid fa-graduation-cap"></i></h3><hr>
+    <div class="edu_info">
+        <img src="images/SLIIT_Logo_Crest.png">
+        <p>
+            Sri Lanka Institute of Information Technology-SLIIT
+            <br>
+            Software Engineering
+            <br>
+            2023-2027
+            </p>
+       </div>  <br>
+    <div class="edu_info">
+    <img src="images/mrc.png">
+    <p>
+        Mahinda Rajapaksha College,Homagama
+        <br>
+        Ordinary Levels & Advanced Level-Commerce Stream
+        <br>
+        2016-2022
+        </p>
+   </div>  <br>   
+<div class="edu_info">
+    <img src="images/ananda.png">
+    <p>Kottawa Ananda College,Kottawa
+    <br>Primary<br>
+    2013-2015</p>
+</div><br>
+<div class="edu_info">
+    <img src="images/haliela.png">
+    <p>Haliela M.M.Vidyalaya,Badulla
+    <br>Primary<br>
+    2010-2012</p>
+</div>
+<br>
+
+</div>
+<div class="top">
+    <a href="#title"> <i class="fa-solid fa-circle-chevron-up"></i></a></div>
+<div class="xp">
+EXPERIENCE <i class="fa-solid fa-code"></i><hr></div>
+<div class="xps">
+<h4>Web Developer</h4>
+<p>Self-employed <br>
+Apr 2021 - Present · 2 yrs<br>
+Skills: HTML Scripting ·  Cascading Style Sheets (CSS) · JavaScript 
+</p>
+<hr><br>
+<h4>Video Producer</h4>
+<p>Self-employed 
+<br>Mar 2021 - Present · 2 yrs
+<br>
+A You Tube channel focusing on tech, web development and IT tutorials.<span>(Open LK) <i class="fa-brands fa-youtube"></i></span>
+</p></div><br>
+<div class="certifi">
+    CERTIFICATIONS <i class="fa-solid fa-certificate"></i><hr>
+</div>
+<div class="certificates"> 
+    <a href="images/Captur1e.JPG"><img src="images/Captur1e.JPG"></a>
+    <a href="images/Capture.JPG"><img src="images/Capture.JPG"></a>
+    <a href="images/solo responsive.jpg"><img src="images/solo responsive.jpg"></a>
+    <a href="images/UC-52d54a00-0e47-4740-8afb-493dc7c8ddae.jpg"><img src="images/UC-52d54a00-0e47-4740-8afb-493dc7c8ddae.jpg"></a>
+    
+</div><br>
+<div class="lan">
+    LANGUAGES <i class="fa-solid fa-language"></i><hr>
+</div>
+<div class="lans"> 
+<h4>English</h4>
+<p>Professional working proficiency</p>
+<hr><br>
+<h4>Sinhalese</h4>
+<p>Native or bilingual proficiency</p>
+</div>
+<div class="linkdin">
+    Visit Linkdin for More Information ... <button> <i class="fa-brands fa-linkedin"></i> Visit  <i class="fa-solid fa-angles-right fa-beat"></i></button>
+</div>
+</body>
+</html>
