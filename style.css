@@ -277,13 +277,12 @@ section{
 
 .img-hero{
     position: relative;
-    animation: floatImage 4s ease-in-out infinite;
-    animation-delay: 3s;
+    
 }
 
 .img-hero img{
     position: relative;
-    width: 400px;
+    width: 300px;
     height: auto;
     z-index: 10;
 }
@@ -300,42 +299,20 @@ section{
 }
 
 .rotate-text span{
-    position: relative;
-    width: 442px;
-    height: 442px;
-    background: red;
-    border: 6px solid #eaeef0;
-    border-radius: 50%;
-    z-index: 1;
-    overflow: hidden;
+   
 }
 
 .rotate-text span::before{
-    content: "";
-    position: absolute;
-    inset: 20px;
-    background: #00aaff;
-    border-radius: 50%;
-    z-index: 1;
+    
 }
 
 .rotate-text span i{
-    position: absolute;
-    inset: 0;
-    background: var(--gradient-color-bg);
-    filter: blur(5px);
-    animation: animate 2s linear infinite;
+    
 }
 
 
 .rotate-text .text{
-    position: absolute;
-    width: 490px;
-    height: 490px;
-    background: #f2f6fb;
-    border-radius: 50%;
-    box-shadow: 0 1px 6px 5.94px rgba(0,0,0,0.2);
-    animation: rotateText 30s linear infinite;
+    
 }
 
 .text b{
@@ -1168,7 +1145,13 @@ footer{
         display: none;
     }
     .img-hero img{
-        width: 100%;
+        width: 0%;
+        height:0px;
+        margin-right:200px;
+        text-align:center;
+    }
+    .home{
+        min-height:0px;
     }
     .text-animate{
         width: 23.8rem;
