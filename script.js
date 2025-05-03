@@ -35,6 +35,17 @@ buttons.forEach((button, index) => {
   });
 });
 
+// Fetch GitHub repositories count
+function fetchGitHubStats() {
+    // This function would ideally fetch live data from GitHub API
+    // For now, we'll use placeholder data that's updated manually
+    console.log("GitHub stats would be fetched here");
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetchGitHubStats();
+});
+
 // portfolio fillter 
 
 var mixer = mixitup('.portfolio-gallery',{
@@ -169,8 +180,8 @@ ScrollReveal({
 
 ScrollReveal().reveal('.hero-info,.main-text,.proposal,.heading', { origin: "top" });
 ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "left" });
-ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
-ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
+ScrollReveal().reveal('.about-content,.skills,.tech-stack', { origin: "right" });
+ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero,.tech-categories', { origin: "bottom" });
 
 // AI Chatbot functionality
 document.addEventListener('DOMContentLoaded', function() {
