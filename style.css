@@ -1517,15 +1517,36 @@ social-contact {
     transition: all 0.3s ease;
 }
 
+/* Add fallback styling for icons that might not be available in Boxicons */
+.tech-icon i.fallback-icon {
+    font-size: 2.5rem;
+    background: var(--gradient-color-bg);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.tech-icon i.fallback-icon::before {
+    content: attr(data-letter);
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Enhanced icon animations */
 .tech-icon:hover {
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: rgba(0,0,0,0.15)0px 10px 20px;
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 .tech-icon:hover i {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(5deg);
 }
 
+/* Improved tooltip styling */
 .tech-icon::before {
     content: attr(data-tooltip);
     position: absolute;
@@ -1534,14 +1555,15 @@ social-contact {
     transform: translateX(-50%);
     background: var(--gradient-color-bg);
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    border-radius: 6px;
     font-size: 0.8rem;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
     white-space: nowrap;
     z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .tech-icon::after {

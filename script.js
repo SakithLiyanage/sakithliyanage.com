@@ -291,6 +291,31 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Handle missing tech icons
+document.addEventListener('DOMContentLoaded', function() {
+    const techIcons = document.querySelectorAll('.tech-icon i');
+    
+    techIcons.forEach(icon => {
+        // Check if the icon is properly loaded
+        if (getComputedStyle(icon, ':before').content === 'normal' || 
+            getComputedStyle(icon).fontSize === '0px') {
+            
+            // Get the data-tooltip value
+            const technology = icon.parentElement.getAttribute('data-tooltip');
+            
+            // Replace with fallback icon
+            icon.classList.add('fallback-icon');
+            
+            // Use first letter as fallback
+            if (technology) {
+                icon.setAttribute('data-letter', technology.charAt(0));
+            } else {
+                icon.setAttribute('data-letter', 'T');
+            }
+        }
+    });
+});
+
 // Add this CSS for typing animation
 const style = document.createElement('style');
 style.textContent = `
