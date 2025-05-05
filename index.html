@@ -42,10 +42,11 @@
     <section class="home" id="home">
         <div class="hero-info">
             <h3>Welcome To my World</h3>
-            <h1>Hi I'm Sakith Liyanage</h1>
-
-            <div class="text-animate">
-                <h2>Full Stack Developer</h2>
+            <div class="title-container">
+                <h1>Hi I'm Sakith Liyanage</h1>
+                <div class="text-animate">
+                    <h2 style="font-size: 30px;">Full Stack Developer</h2>
+                </div>
             </div>
 
             <p>Passionate full stack developer with expertise in creating responsive web applications and innovative software solutions. Specializing in both frontend and backend technologies to deliver seamless, end-to-end user experiences.</p>
@@ -113,11 +114,11 @@
                 </a>
                 <div class="github-metrics">
                     <div class="metric">
-                        <span class="count">10+</span>
+                        <span class="count">20+</span>
                         <span class="label">Repositories</span>
                     </div>
                     <div class="metric">
-                        <span class="count">200+</span>
+                        <span class="count">400+</span>
                         <span class="label">Contributions</span>
                     </div>
                 </div>
@@ -237,8 +238,8 @@
                         <div class="tech-icon" data-tooltip="SASS">
                             <i class='bx bxl-sass'></i>
                         </div>
-                        <div class="tech-icon" data-tooltip="TypeScript">
-                            <i class='bx bxl-typescript'></i>
+                        <div class="tech-icon" data-tooltip="Tailwind CSS">
+                            <i class='bx bxl-tailwind-css'></i>
                         </div>
                     </div>
                 </div>
@@ -264,8 +265,17 @@
                         <div class="tech-icon" data-tooltip="Express.js">
                             <i class='bx bx-server'></i>
                         </div>
-                        <div class="tech-icon" data-tooltip="Firebase">
-                            <i class='bx bxl-firebase'></i>
+                        <div class="tech-icon" data-tooltip="Java">
+                            <i class='bx bxl-java'></i>
+                        </div>
+                        <div class="tech-icon" data-tooltip="C">
+                            <i class='bx bx-code'></i>
+                        </div>
+                        <div class="tech-icon" data-tooltip="C++">
+                            <i class='bx bxl-c-plus-plus'></i>
+                        </div>
+                        <div class="tech-icon" data-tooltip="Kotlin">
+                            <i class='bx bx-code-curly'></i>
                         </div>
                     </div>
                 </div>
@@ -282,14 +292,11 @@
                         <div class="tech-icon" data-tooltip="VS Code">
                             <i class='bx bxl-visual-studio'></i>
                         </div>
-                        <div class="tech-icon" data-tooltip="Docker">
-                            <i class='bx bxl-docker'></i>
-                        </div>
-                        <div class="tech-icon" data-tooltip="AWS">
-                            <i class='bx bxl-aws'></i>
-                        </div>
                         <div class="tech-icon" data-tooltip="Terminal">
                             <i class='bx bx-terminal'></i>
+                        </div>
+                        <div class="tech-icon" data-tooltip="Android Studio">
+                            <i class='bx bxl-android'></i>
                         </div>
                     </div>
                 </div>
@@ -300,15 +307,13 @@
                         <div class="tech-icon" data-tooltip="Adobe Photoshop">
                             <i class='bx bxl-adobe'></i>
                         </div>
+                        <div class="tech-icon" data-tooltip="Adobe Illustrator">
+                            <i class='bx bxl-adobe'></i>
+                        </div>
                         <div class="tech-icon" data-tooltip="Figma">
                             <i class='bx bxl-figma'></i>
                         </div>
-                        <div class="tech-icon" data-tooltip="Sketch">
-                            <i class='bx bxl-sketch'></i>
-                        </div>
-                        <div class="tech-icon" data-tooltip="Adobe XD">
-                            <i class='bx bxl-xing'></i>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -405,10 +410,50 @@
             <button class="button mixitup-control-active" data-filter="all">All Work</button>
             <button class="button" data-filter=".web">Web Development</button>
             <button class="button" data-filter=".branding">Branding Design</button>
-            <button class="button" data-filter=".github">GitHub Projects</button>
+            <button class="button" data-filter=".mobile">Mobile App Development</button>
         </div>
 
         <div class="portfolio-gallery">
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>ConnectHub Social Media WebApp</h3>
+                    <p>ConnectHub, a modern social media web application that leverages cutting-edge technologies to deliver a responsive, engaging user experience. From real-time updates to dynamic content, ConnectHub showcases the power of full-stack development.
+                    </p>
+
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/socialmedia.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix mobile">
+                <div class="portfolio-content">
+                    <h3>Eventix Event Ticket Booking Mobile App</h3>
+                    <p>Eventix: Your Gateway to Seamless Event Discovery and Booking
+                        Eventix is a sleek, user-friendly mobile application designed to simplify how you discover, book, and manage tickets for a wide range of events., Eventix brings the event world directly to your fingertips.
+                    </p>
+
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/eventix.jpeg" alt="">
+                </div>
+            </div>
+
+
+            <div class="portfolio-box mix mobile">
+                <div class="portfolio-content">
+                    <h3>FinFlow Financial Tracking Mobile App</h3>
+                    <p>FinFlow, a comprehensive financial tracking mobile application developed entirely in Kotlin! This app is designed to help users take control of their finances, track expenses, manage budgets, and gain insights into their spending habits.
+                    </p>
+
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/FinFlow.jpeg" alt="">
+                </div>
+            </div>
+
+
             <div class="portfolio-box mix web">
                 <div class="portfolio-content">
                     <h3>VN Sports Dressings</h3>
@@ -518,65 +563,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box mix github">
-                <div class="portfolio-content">
-                    <h3>Portfolio Website</h3>
-                    <p>My personal portfolio website built with HTML, CSS, and JavaScript, featuring responsive design and modern UI/UX principles.</p>
-                </div>
-                <div class="portfolio-img">
-                    <img src="https://opengraph.githubassets.com/1/SakithLiyanage/sakithliyanage.com" alt="Portfolio Repository">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix github">
-                <div class="portfolio-content">
-                    <h3>Smart Home IoT Platform</h3>
-                    <p>An IoT-based smart home management system using React for frontend and Node.js for backend, with MQTT for device communication.</p>
-                </div>
-                <div class="portfolio-img">
-                    <img src="https://opengraph.githubassets.com/1/SakithLiyanage/smart-home-iot" alt="Smart Home IoT Repository">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix github">
-                <div class="portfolio-content">
-                    <h3>E-Commerce Template</h3>
-                    <p>A customizable e-commerce website template built with modern web technologies, featuring product catalog, cart functionality, and payment integration.</p>
-                </div>
-                <div class="portfolio-img">
-                    <img src="https://opengraph.githubassets.com/1/SakithLiyanage/ecommerce-template" alt="E-Commerce Template Repository">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix github">
-                <div class="portfolio-content">
-                    <h3>MERN E-Commerce Platform</h3>
-                    <p>A comprehensive e-commerce solution built with MongoDB, Express, React, and Node.js. Features include user authentication, product management, cart functionality, payment integration, and admin dashboard.</p>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/ecommerce-mern.jpg" alt="MERN E-Commerce Project">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix github">
-                <div class="portfolio-content">
-                    <h3>Real-Time Chat Application</h3>
-                    <p>Full stack chat application using Socket.IO, React, and Node.js with features like real-time messaging, user presence indicators, and message history stored in MongoDB.</p>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/chat-app.jpg" alt="Real-Time Chat Application">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix github">
-                <div class="portfolio-content">
-                    <h3>Task Management System</h3>
-                    <p>A productivity application built with React, Node.js, and PostgreSQL featuring drag-and-drop task organization, user authentication, task assignment, and progress tracking.</p>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/task-manager.jpg" alt="Task Management System">
-                </div>
-            </div>
+            
         </div>
         
         <div class="github-activity">
@@ -675,8 +662,8 @@
                         <span class="highlight"></span>
                     </div>
                     
-                    <button type="submit" class="send-btn">
-                        <span>Send Message</span>
+                    <button type="submit" class="send-btn" >
+                        <span style="color: rgb(218, 217, 217);">Send Message</span>
                         <i class='bx bx-send'></i>
                     </button>
                     

@@ -341,3 +341,26 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+// Typing animation for profession
+document.addEventListener('DOMContentLoaded', function() {
+    const professionElement = document.querySelector('.profession');
+    const professionText = document.querySelector('.text-animate h2').textContent;
+    let i = 0;
+    
+    function typeWriter() {
+        if (i < professionText.length) {
+            professionElement.textContent += professionText.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100); // Adjust typing speed here
+        } else {
+            // Optional: Add blinking cursor effect after typing is complete
+            setTimeout(() => {
+                professionElement.classList.add('typing-complete');
+            }, 500);
+        }
+    }
+    
+    // Start typing after a short delay
+    setTimeout(typeWriter, 1000);
+});
+

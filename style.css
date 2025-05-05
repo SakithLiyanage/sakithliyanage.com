@@ -165,6 +165,7 @@ section{
 .text-animate{
     width: 22.8rem;
     position: relative;
+    display: inline-block;
 }
 
 .text-animate h2{
@@ -1926,3 +1927,48 @@ footer p {
     place-items: center;
     font-size: 25px;
 }
+
+/* Add these styles to your existing CSS */
+
+.profession {
+    position: relative;
+    display: inline-block;
+    color: #4e9eff; /* You can use your theme color here */
+}
+
+.profession::after {
+    content: '|';
+    position: absolute;
+    right: -8px;
+    color: #fff;
+    animation: blink 0.7s infinite;
+}
+
+.profession.typing-complete::after {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Add these styles to your CSS file */
+
+.title-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.title-container h1 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.text-animate {
+    display: inline-block;
+}
+
+/* Make sure any existing animation styles for .text-animate remain intact */
