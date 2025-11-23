@@ -598,6 +598,74 @@ section{
     right: 6%;
 }
 
+/* ==================== Awards section css code ============================ */
+.awards-section{
+    position: relative;
+    padding: 5rem 10%;
+}
+
+.awards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.award-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: var(--gradient-white-bg2);
+    box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
+                rgba(0,0,0,0.06)0px 1px 2px 0px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-item:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(0,0,0,0.15)0px 5px 15px 0,
+                rgba(0,0,0,0.1)0px 3px 6px 0px;
+}
+
+.award-icon{
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-color-bg);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.award-content{
+    flex: 1;
+}
+
+.award-content h3{
+    color: var(--main-color);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.award-content p{
+    color: var(--font-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.award-content span{
+    color: var(--font-color);
+    font-size: 0.9rem;
+    opacity: 0.8;
+    line-height: 1.5;
+}
 
 /* ==================== Services section css code ============================ */
 .fillter-buttons{
