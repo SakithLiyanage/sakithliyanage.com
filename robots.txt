@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow common non-content paths (none for this static site)
+# Disallow: /admin/
+# Disallow: /private/
+
+Sitemap: https://sakith.axisdatatech.com/sitemap.xml
