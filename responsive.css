@@ -1,0 +1,67 @@
+/* Mobile responsiveness overrides */
+
+/* Lock scroll when mobile menu is open */
+body.open {
+  overflow: hidden;
+}
+
+/* Fluid hero headings */
+.hero-info h1 {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+}
+.text-animate h2 {
+  font-size: clamp(1.25rem, 5vw, 2rem);
+}
+
+/* Wrap buttons and icons to avoid overflow */
+.btn-box {
+  width: auto;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.social-media {
+  width: auto;
+  height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+/* Title container already exists; ensure wrapping */
+.title-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.title-container h1 { margin: 0; }
+
+/* Small screen adjustments */
+@media (max-width: 991px) {
+  header, section, footer { padding-left: 3%; padding-right: 3%; }
+  .home { grid-gap: 0; flex-direction: column-reverse; }
+  .about, .contactSkills { flex-direction: column; }
+  .about .about-img .aboutHero { width: 100%; height: auto; }
+  .portfolio-gallery { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+}
+
+@media (max-width: 768px) {
+  .proposal { display: none; }
+  .btn { padding: 10px; }
+}
+
+@media (max-width: 530px) {
+  section { padding: 50px 3%; }
+  /* Override any rules hiding the hero image */
+  .img-hero img {
+    width: 160px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block;
+  }
+  .btn-box { width: 100%; margin-bottom: 3rem; }
+  .fillter-buttons { display: grid; grid-gap: 1rem; }
+  .fillter-buttons button { width: 100%; padding: 13px; }
+}
